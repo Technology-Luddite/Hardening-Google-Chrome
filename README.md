@@ -90,3 +90,17 @@ These settings stop websites from spying on what you are doing in other windows 
 ## The Verdict
 
 By deploying this framework, your browser configuration shifts from a consumer tracking baseline into a hardened enterprise machine. While no browser with JavaScript enabled is completely invisible, this setup stops standard internet surveillance in its tracks, cleans your local drive automatically, and locks out deep hardware exploitation.
+
+## How To Use The Script(s)
+
+### Method A: If PowerShell Execution is Disabled (Recommended/Default)
+
+* **Step 1:** Ensure both `Run-Chrome-SetUpManager.bat` and `Chrome-TurnOff-Telemmetry-UI-permissions.ps1` are placed together in the exact same folder.
+* **Step 2:** Double-click **`Run-Chrome-SetUpManager.bat`** to deploy the ephemeral bootstrap container and safely bypass local script restrictions for this session.
+* **Step 3:** Click **Yes** on the Windows User Account Control (UAC) prompt to grant the administrative privileges required to modify the system registry and launch the manager.
+
+### Method B: If PowerShell Execution is Already Enabled
+
+* **Step 1:** Right-click the Windows Start button and select **PowerShell (Admin)** or **Terminal (Admin)** to open an elevated console workspace.
+* **Step 2:** Navigate to your current script directory by using the change directory command (for example: `cd C:\temp\`).
+* **Step 3:** Launch the script engine directly by entering `.\Chrome-TurnOff-Telemmetry-UI-permissions.ps1` and pressing **Enter** to display the interface.
